@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style_form.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h3 class="judul">Formulir Anggota Perpustakaan</h3>
+      <form action="">
+        <div class="inputBox">
+          <span class="inputJudul">Nama</span> <br />
+          <input
+            type="text"
+            placeholder="Ketikan namamu"
+            name="nama"
+            id="nama"
+            class="input"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span class="inputJudul">Kota Lahir</span> <br />
+          <input
+            type="text"
+            placeholder="Ketikan dan/pilih kota lahirmu"
+            list="lahir"
+            name="kota"
+            id="kota"
+            class="input"
+          />
+
+          <datalist id="lahir">
+            <option value="Banda Aceh"></option>
+            <option value="Bekasi"></option>
+            <option value="Cimahi"></option>
+            <option value="Cilegon"></option>
+            <option value="Depok"></option>
+            <option value="Denpasar"></option>
+            <option value="Gorontalo"></option>
+            <option value="Jakarta"></option>
+            <option value="Jepara"></option>
+            <option value="Kupang"></option>
+            <option value="Karawang"></option>
+            <option value="Malang"></option>
+            <option value="Makassar"></option>
+            <option value="Manado"></option>
+            <option value="Madiun"></option>
+            <option value="Ngawi"></option>
+            <option value="Nganjuk"></option>
+            <option value="Padang"></option>
+            <option value="Palu"></option>
+            <option value="Pontianak"></option>
+            <option value="Purbalingga"></option>
+            <option value="Salatiga"></option>
+            <option value="Semarang"></option>
+            <option value="Sleman"></option>
+            <option value="Samarinda"></option>
+            <option value="Tangerang"></option>
+            <option value="Tasikmalaya"></option>
+            <option value="Tegal"></option>
+            <option value="Yogyakarta"></option>
+          </datalist>
+        </div>
+
+        <div class="inputBox">
+          <span class="inputJudul">Tanggal Lahir</span> <br />
+          <input type="date" name="tanggal" id="tanggal" class="input" />
+        </div>
+
+        <div class="inputBox">
+          <span>Gender</span> <br />
+          <input type="radio" name="gender" value="Pria" id="gender" />
+          <span>Pria</span>
+          <input type="radio" name="gender" value="Wanita" id="gender" />
+          <span>Wanita</span>
+        </div>
+
+        <div class="inputBox">
+          <span>No Telepon</span> <br />
+          <input
+            type="number"
+            name="telepon"
+            id="telepon"
+            placeholder="Ketikan no telepon kamu"
+            class="input"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Makanan Favorit</span> <br />
+          <input
+            type="checkbox"
+            name="makanan"
+            id="makanan"
+            value="Ayam Goreng"
+          />
+          <span>Ayam Goreng</span>
+          <input
+            type="checkbox"
+            name="makanan"
+            id="makanan"
+            value="Bakmi Goreng"
+          />
+          <span>Bakmi Goreng</span>
+        </div>
+
+        <div class="inputBox">
+          <span>Agama</span> <br />
+          <select name="agama" id="agama" class="input">
+            <option value="blank" hidden disabled selected value>Pilih</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </div>
+
+        <div class="inputBox">
+          <span>Alamat</span> <br />
+          <textarea
+            type="text"
+            placeholder="Ketikan alamat lengkap kamu"
+            name="alamat"
+            id="alamat"
+            cols="20"
+            rows="2"
+            class="input"
+          ></textarea>
+          />
+        </div>
+
+        <div class="buttonWrap">
+          <button type="clear" name="reset" id="clear">Clear</button>
+          <button type="submit" name="submit" id="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

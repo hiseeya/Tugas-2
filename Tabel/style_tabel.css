@@ -1,0 +1,62 @@
+body {
+  background: url(gif.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.judul {
+  color: white;
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  text-transform: uppercase;
+}
+
+.box {
+  background-color: rgba(88, 15, 15, 0.7);
+  text-align: center;
+  margin: 50px auto;
+  width: 75%;
+  height: 80vh;
+  border: solid 3px white;
+  border-style: dashed;
+  border-radius: 30px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+td,
+th,
+table {
+  border: solid 1px white;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  width: 10%;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 500px) {
+  .box {
+    overflow: scroll;
+  }
+}
+
+table {
+  border-style: dashed;
+  width: 95%;
+  height: 70vh;
+  margin: 0 auto;
+  margin-bottom: 70%;
+  border: solid 3px white;
+  color: white;
+}
+
+td:hover,
+th:hover {
+  background-color: #d88989c1;
+}
